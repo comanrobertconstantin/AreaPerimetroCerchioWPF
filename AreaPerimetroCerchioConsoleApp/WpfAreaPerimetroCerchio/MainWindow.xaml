@@ -8,9 +8,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Label Content="radius:" HorizontalAlignment="Left" Height="28" Margin="323,147,0,0" VerticalAlignment="Top" Width="47"/>
-        <TextBox x:Name="txtNr" HorizontalAlignment="Left" Margin="375,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="28"/>
-        <Button x:Name="btnArea" Content="GetArea" HorizontalAlignment="Left" Height="25" Margin="289,180,0,0" VerticalAlignment="Top" Width="81" Click="btnArea_Click"/>
-        <Button x:Name="btnPerimeter" Content="GetPerimeter" HorizontalAlignment="Left" Height="25" Margin="289,210,0,0" VerticalAlignment="Top" Width="81"/>
+        <TextBox x:Name="txtRadius" HorizontalAlignment="Left" Margin="375,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="28"/>
+        <Button x:Name="btnArea" Content="GetAreaAndPerimeter" HorizontalAlignment="Left" Height="25" Margin="289,180,0,0" VerticalAlignment="Top" Width="81" Click="btnAreaAndPerimeter_Click"/>
         <Label x:Name="lblArea" Content="0" HorizontalAlignment="Left" Margin="375,180,0,0" VerticalAlignment="Top" Width="115"/>
         <Label x:Name="lblPerimeter" Content="0" HorizontalAlignment="Left" Margin="375,210,0,0" VerticalAlignment="Top" Width="115"/>
 

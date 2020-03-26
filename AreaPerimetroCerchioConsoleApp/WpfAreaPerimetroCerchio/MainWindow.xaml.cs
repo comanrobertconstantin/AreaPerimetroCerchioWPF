@@ -27,23 +27,29 @@ namespace WpfAreaPerimetroCerchio
             InitializeComponent();
         }
 
-        private async void btnArea_Click(object sender, RoutedEventArgs e)
+        private async void btnAreaAndPerimeter_Click(object sender, RoutedEventArgs e)
         {
-            double ris = 0;
+            double risArea = 0;
+            double risPerimeter = 0;
 
-            double raggio = Convert.ToDouble(txtNr.Text);
+            double raggio = Convert.ToDouble(txtRadius.Text);
 
             HttpClient client = new HttpClient();
 
-            string url = "https://localhost:44327/api/Operations/GetArea?raggio={raggio}";
+            string urlArea = "https://localhost:44327/api/Operations/GetArea?raggio={raggio}";
+            string urlPerimeter = "https://localhost:44327/api/Operations/GetPerimeter?raggio={raggio}";
 
-            HttpResponseMessage response = await client.GetAsync(url);
+            HttpResponseMessage responseArea = await client.GetAsync(urlArea);
+            HttpResponseMessage responsePerimeter = await client.GetAsync(urlPerimeter);
 
-            string content = await response.Content.ReadAsStringAsync();
+            string contentArea = await responseArea.Content.ReadAsStringAsync();
+            string contentPerimeter = await responsePerimeter.Content.ReadAsStringAsync();
 
-            ris = JsonConvert.DeserializeObject<double>(content);
+            risArea = JsonConvert.DeserializeObject<double>(contentArea);
+            risPerimeter = JsonConvert.DeserializeObject<double>(contentPerimeter);
 
-            Dispatcher.Invoke(() => lblArea.Content = ris);
+            Dispatcher.Invoke(() => lblArea.Content = risArea);
+            Dispatcher.Invoke(() => lblPerimeter.Content = risPerimeter);
         }
     }
 }
