@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfAreaPerimetroCerchio.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAreaPerimetroCerchio"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="first number: " HorizontalAlignment="Left" Height="28" Margin="289,104,0,0" VerticalAlignment="Top" Width="76"/>
+        <Label Content="second number: " HorizontalAlignment="Left" Height="28" Margin="289,147,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="txtNr1" HorizontalAlignment="Left" Margin="370,104,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="28"/>
+        <TextBox x:Name="txtNr2" HorizontalAlignment="Left" Margin="400,147,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" Height="28"/>
+        <Button x:Name="btnArea" Content="GetArea" HorizontalAlignment="Left" Height="25" Margin="289,180,0,0" VerticalAlignment="Top" Width="81"/>
+        <Button x:Name="btnPerimeter" Content="GetPerimeter" HorizontalAlignment="Left" Height="25" Margin="289,210,0,0" VerticalAlignment="Top" Width="81"/>
+        <Label x:Name="lblArea" Content="0" HorizontalAlignment="Left" Margin="375,180,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label x:Name="lblPerimeter" Content="0" HorizontalAlignment="Left" Margin="375,210,0,0" VerticalAlignment="Top" Width="115"/>
+
+    </Grid>
+</Window>
