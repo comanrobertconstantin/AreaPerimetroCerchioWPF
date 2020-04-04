@@ -7,13 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Label Content="radius:" HorizontalAlignment="Left" Height="28" Margin="323,147,0,0" VerticalAlignment="Top" Width="47"/>
+        <Label Content="Radius:" HorizontalAlignment="Left" Height="28" Margin="323,147,0,0" VerticalAlignment="Top" Width="47"/>
         <TextBox x:Name="txtRadius" HorizontalAlignment="Left" Margin="375,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="28"/>
-        <Button x:Name="btnArea" Content="GetAreaAndPerimeter" HorizontalAlignment="Left" Height="25" Margin="323,180,0,0" VerticalAlignment="Top" Width="167" Click="btnAreaAndPerimeter_Click"/>
+        <Button x:Name="btnArea" Content="GetArea" HorizontalAlignment="Left" Height="25" Margin="323,180,0,0" VerticalAlignment="Top" Width="167" Click="btnArea_Click"/>
         <Label x:Name="lblArea" Content="0" HorizontalAlignment="Left" Margin="365,210,0,0" VerticalAlignment="Top" Width="125"/>
-        <Label x:Name="lblPerimeter" Content="0" HorizontalAlignment="Left" Margin="391,241,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label x:Name="lblPerimeter" Content="0" HorizontalAlignment="Left" Margin="391,271,0,0" VerticalAlignment="Top" Width="99"/>
         <Label Content="Area:" HorizontalAlignment="Left" Margin="323,210,0,0" VerticalAlignment="Top"/>
-        <Label Content="Perimeter:" HorizontalAlignment="Left" Margin="323,241,0,0" VerticalAlignment="Top"/>
+        <Label Content="Perimeter:" HorizontalAlignment="Left" Margin="323,271,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnPerimeter" Content="GetPerimeter" HorizontalAlignment="Left" Height="25" Margin="323,241,0,0" VerticalAlignment="Top" Width="167" Click="btnPerimeter_Click"/>
 
     </Grid>
 </Window>
